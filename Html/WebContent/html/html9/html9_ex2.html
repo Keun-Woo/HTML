@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<button type = "button" onclick= "start()">시작</button>
+	<span id = "result"></span>
+	<script type="text/javascript">
+	var i;
+	function start(){
+		for(i=0; i<5; i++){
+		document.write(parseInt(Math.random()*9)+1);
+		document.write(", ");
+		document.write("<br>");
+		}
+	}
+	</script>
+</body>
+</html>

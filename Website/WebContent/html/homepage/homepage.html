@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Homepage</title>
+		<style type="text/css">
+			header nav sector aside footer{
+				margin: 0px;
+			}
+			
+			img{
+				width: 250px;
+				vertical-align: middle;
+				border-radius: 20px;
+				position: relative;
+				left :10px;
+				bottom: 5px;
+			}
+			.imgswap{
+				position: relative;
+				width: 250px;
+				
+			}
+			.headera{	
+				
+				display:block; 
+				height:100px; 
+				
+				
+			}
+			header{
+				background-color: black;
+				line-height: 100px;
+				border-radius: 30px;
+			}
+			.imgswap img:last-child{display:none} 
+			.imgswap:hover img:first-child{display:none} 
+			.imgswap:hover img:last-child{display:inline-block}
+			nav{
+				background-color: black;
+				line-height: 150px;
+				border-radius: 30px;
+			}
+			.navlist li a{
+				text-decoration: none;
+			}
+			.navlist li a:hover{
+				font-size:1.15em;
+				
+			}
+			.navlist li{
+				border: 1px solid black;
+				background-color: white;
+				display:inline;
+				padding: 10px;
+			}
+			.left{
+				float:left;
+				width:calc(30% -5px);
+				height:1600px;
+				padding-left:10px;
+				background-color: linen;
+			}
+			section{
+				float:left;
+				width:calc(30%-20px);
+				heght:1600px;
+				
+				background-color: gold;
+			}
+			.right{
+				float:right;
+				width:calc(30% -5px);
+				
+				heght:1600px;
+				background-color: azure;
+			}
+			
+			footer{
+				clear: both;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<header>
+			<div class="imgswap">
+				<a class="headera" href="http://google.com">
+					<img src="../../images/title.jpg">
+					<img src="../../images/title1.jpg">
+				</a>
+			</div>	
+		</header>
+		<nav>
+			<ul class="navlist">
+				<li><a href="#">HOME</a></li>
+				<li><a href="#">ABOUT US</a></li>
+				<li><a href="#">NEWS</a></li>
+				<li><a href="#">MYACCOUNT</a></li>
+				<li><a href="#">CONTACTS</a></li>
+			</ul>
+		</nav>
+		<aside class="left">
+			<h2>카테고리</h2>
+			<ul>
+				<li><a>리스트1</a></li>
+				<li><a>리스트2</a></li>
+				<li><a>리스트3</a></li>
+				<li><a>리스트4</a></li>
+			</ul>
+		</aside>
+		<section>
+			<article>
+				<iframe></iframe>
+				<br>
+				<iframe></iframe>
+				<br>
+				<iframe></iframe>
+			</article>
+		</section>
+		<aside class="right">
+			<div>
+			 안녕하세요
+			</div>
+		</aside>
+		<footer>
+			<p>Copyright (c) 2021 Kang</p>
+		</footer>
+	</body>
+</html>

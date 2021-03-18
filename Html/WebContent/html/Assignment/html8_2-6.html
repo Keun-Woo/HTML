@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var input,num1,num2;
+		do{
+			input = prompt("첫번째 숫자를 입력하세요","정수로");	
+			num1 =parseInt(input);
+			input = prompt("두번째 숫자를 입력하시오","정수로");	
+			num2 =parseInt(input);
+		if(parseInt(num1 + num2) >=100){
+			document.write("첫번째숫자 = " + num1 + 
+						"두번째숫자 = " + num2 +
+						"두수의 합 = " + parseInt(num1 + num2));	
+			document.write("<br>");	
+			document.write("<hr>");	
+		}else{
+			continue;
+		}
+		}while(num1!=0||num2!=0)
+	</script>
+</body>
+</html>

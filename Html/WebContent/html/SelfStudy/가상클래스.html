@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>가상 클래스 이용하기</title>
+</head>
+	<style>
+	table{
+ 		border:2px solid red; 
+		text-align: center;
+		border-collapse: collapse;
+	}
+	table tr:first-child{
+	background-color: yellow;
+	}
+	table tr:nth-child(2n){
+	background-color: lime;
+	}
+/* 	table tr:nth-child(4){ 
+ 	background-color: green; 
+	} 
+	nth-child(even)=>짝수
+	nth-child(odd)=>홀수
+*/
+	
+	</style>
+<body>
+	<table class="table" width="450" height="200" >
+		<tr>
+			<td>알라딘</td>
+			<td>임꺽정</td>
+			<td>개나리</td>
+			<td>홍길동</td>
+		</tr>
+		<tr>
+			<td>패밀리</td>
+			<td>스타일</td>
+			<td>텍스트</td>
+			<td>볼드체</td>
+		</tr>
+		<tr>
+			<td>선택자</td>
+			<td>인라인</td>
+			<td>패밀리</td>
+			<td>요소들</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+		</tr>			
+	</table>
+</body>
+</html>

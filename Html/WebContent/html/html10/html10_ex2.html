@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<form>
+		<img id="picture" alt="사진1" src="../../images/title.jpg" onclick="test()">
+	</form>
+	<script type="text/javascript">
+		function test(){
+			var orgsrc = document.getElementById("picture").src;	
+			var newsrcl
+			if(orgsrc.indexOf("title")>-1){
+				newsrc = "../../images/saja.jpg";
+			}else{
+				newsrc = "../../images/title.jpg";
+			}
+			
+			document.getElementById("picture").src =newsrc;
+		}
+	</script>
+	</body>
+</html>

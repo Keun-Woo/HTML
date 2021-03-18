@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h3>가위바위보 게임</h3>
+	<p>가위,바위,보 중 하나를 입력하시오.</p>
+	<input type="text" id="gbb">
+	<button type="button" onclick="gbb()">대결</button>
+
+	<script type="text/javascript">
+		function gbb(){
+			var arrGbb = ["가위","바위","보"];
+		 	var comIdx = parseInt(Math.random()*3);
+		 	var comGbb = arrGbb[comIdx];
+		 	
+		 var userGbb = doucument.getElementById("gbb").value;
+		 var userIdx = arrGbb.indexOf(userGbb);
+		 
+		 //가위바위보 비교
+		 
+		 if(comIdx == userIdx){
+			 alert("비겼습니다.\n컴퓨터 : " + comGbb + "\n사용자 : " + userGbb);
+		 }else if(comIdx<userIdx){
+			 if(comIdx ==0 && userIdx ==2){
+				 alert("졌습니다.\n컴퓨터 : " + comGbb +"\n사용자 : " + userGbb);
+			 }
+		 }else{
+			 alert("이겼습니다.\n컴퓨터 : " + comGbb +"\n사용자 : " + userGbb);
+		 }else if(comIdx>userIdx){
+			 if(comIdx ==0 && userIdx ==2){
+				 alert("이겼습니다.\n컴퓨터 : " + comGbb +"\n사용자 : " + userGbb);
+			 }
+		 }else{
+			 alert("졌습니다.\n컴퓨터 : " + comGbb +"\n사용자 : " + userGbb);
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+	<style type="text/css">
+		p,div{
+			width: 200px;
+			height: 100px;
+		}
+		
+		#ex1{
+			background-color: aqua;
+		}
+		#ex2{
+		background-color: yellow;
+		position: absolute;/*fixed static relative */
+		top: 50px;
+		left:50px;
+		}
+		#ex3{
+			background-color: green;
+		}
+		#container{
+			background-color: gray;
+		}	
+		
+		img{
+			width: 300px;
+			position: absolute;
+			top : 450px;
+			z-index: -1;
+		}
+	</style>
+</head>
+<body>
+	<h1>position 연습</h1>
+	<p id="ex1">블럭1</p>
+	<div id="container">
+		<div id="ex2">블럭2(position)</div>
+	</div>
+	<p id="ex3">블럭3</p>
+	
+	
+		<h1>z-index 연습</h1>
+		<img src="../../images/saja.jpg"> 
+		<p>글자를 아무렇게나 막 쓰는중이긴한데 img부분이 안보영 ㅠ</p>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var input, num1;
+		input = prompt("점수를 입력하세요");	
+		num1 =parseInt(input/10);
+			switch(num1){
+			case 10:
+				document.write("A++");
+				break;
+			case 9:
+				document.write("A");
+				test();
+				break;
+			case 8:
+				document.write("B");
+				test();
+				break;
+			case 7:
+				document.write("C");
+				test();
+				break;
+			case 6:
+				document.write("D");
+				test();
+				break;
+			case 5:
+			case 4:
+			case 3:
+			case 2:
+			case 1:
+			case 0:
+				document.write("F");
+				break;
+			}
+			function test(){
+				num2 =parseInt(input)%10;
+			
+				switch(true){
+				case (num2>=7):
+					document.write("+");
+				break;
+				case (num2>=4&&num2<7):
+					document.write("0");
+				break;
+				case (num2<4):
+					document.write("-");
+				break;
+				}
+			}
+	</script>
+</body>
+</html>

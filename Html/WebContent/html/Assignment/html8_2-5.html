@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var num=1; var count=1;
+		document.write("2의 배수이면서 3의배수인것은?(1~100)");
+		document.write("<br>");
+		while(num<=100){
+			if(num%2==0&&num%3==0){
+				document.write(count + "번째 : " + num);
+				document.write("<br>");
+				num+=1;
+				count+=1;
+			}else{
+				
+				num+=1;
+			}
+		}
+	</script>
+</body>
+</html>

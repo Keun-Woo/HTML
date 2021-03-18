@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<form>
+		<input type="text" id="target" name="userName">
+		<button type="button" onclick="proc()">제출</button>
+		
+		<div>무궁화 꽃이 피었습니다.</div>
+		<div>무궁화 꽃이 피었을까요?</div>
+		<button type="button" onclick="get()">내용가져오기</button>
+		<button type="button" onclick="set('오냐')">내용 바꾸기</button>
+		
+		<hr>
+		
+		<img id="image1" alt="saja" src="../../images/saja.jpg" height="100px">
+		<button type="button" onclick="changeImage()">이미지변경</button>
+		
+		<hr>
+		<p id="p1" style="">동해물과 백두산이 마르고 닳도록</p>
+		<button type="button" onclick="changeStyle()">스타일변경</button>
+		
+		
+		
+	</form>
+	<script type="text/javascript">
+		function get(){
+			document.getElementsByTagName("div");// 배열로 반환
+			var obj = document.getElementsByTagName("div")[1]; // div반환
+			
+			alert(obj.innerHTML)
+		}
+		function set(param){
+			document.getElementsByTagName("div")[0].innerHTML
+			 = param;
+		}
+	
+		function proc(){
+			var obj = document.getElementById("target");
+			
+			alert(obj);
+			alert(obj.value);
+		}
+		
+		function changeImage(){
+			document.getElementById("image1").src
+			="../../images/saja11.jpg";
+		}
+		
+		
+		function changeStyle(){
+			document.getElementById("p1").style.color = "red";
+			document.getElementById("p1").style.fontStyle = "italic";
+			document.getElementById("p1").style.border = "1px dotted red";
+			
+		}
+	</script>
+</body>
+</html>
