@@ -4,10 +4,15 @@
 		<meta charset="UTF-8">
 		<title>Homepage</title>
 		<style type="text/css">
-			header nav sector aside footer{
+			header nav sector aside footer ul{
 				margin: 0px;
 			}
-			
+			ul{
+				margin: 8px;
+			}
+			body{
+				background-color: linen;
+			}
 			img{
 				width: 250px;
 				vertical-align: middle;
@@ -16,12 +21,12 @@
 				left :10px;
 				bottom: 5px;
 			}
-			.imgswap{
+			#imgswap{
 				position: relative;
 				width: 250px;
 				
 			}
-			.headera{	
+			#imgswap.a{	
 				
 				display:block; 
 				height:100px; 
@@ -33,66 +38,94 @@
 				line-height: 100px;
 				border-radius: 30px;
 			}
-			.imgswap img:last-child{display:none} 
-			.imgswap:hover img:first-child{display:none} 
-			.imgswap:hover img:last-child{display:inline-block}
+			#imgswap img:last-child{display:none} 
+			#imgswap:hover img:first-child{display:none} 
+			#imgswap:hover img:last-child{display:inline-block}
 			nav{
+				
 				background-color: black;
 				line-height: 150px;
 				border-radius: 30px;
 			}
-			.navlist li a{
+			#navlist{
+				text-align: center;
+			}
+			#navlist a{
 				text-decoration: none;
 			}
-			.navlist li a:hover{
+			#navlist a:hover{
 				font-size:1.15em;
 				
 			}
-			.navlist li{
+			#navlist li{
 				border: 1px solid black;
 				background-color: white;
 				display:inline;
 				padding: 10px;
+				font-size: 30px;
+				font-weight:bold;
 			}
-			.left{
+			#left{
+				border-radius: 30px;
 				float:left;
-				width:calc(30% -5px);
-				height:1600px;
+				width:calc(20% - 5px);
+				height:600px;
 				padding-left:10px;
-				background-color: linen;
+				background-color: cyan;
+			}
+			#left p{
+				font-size: 40px;
+				font-weight:bold;
+			}
+			
+			#leftul{
+				font-size:30px;
+				list-style:none;
+			}
+			#leftul li{
+				border:1px solid red;
+				background-color: yellow;
+				display: inline;
+			}
+			#leftul li a{
+				padding: 10px;
 			}
 			section{
 				float:left;
-				width:calc(30%-20px);
+				width:calc(50% - 20px);
 				heght:1600px;
 				
 				background-color: gold;
 			}
-			.right{
+			#right{
 				float:right;
-				width:calc(30% -5px);
+				width:calc(30% - 5px);
 				
 				heght:1600px;
 				background-color: azure;
 			}
 			
 			footer{
+				background-color: blue;
 				clear: both;
+				color: white;
+				text-align: center;
 			}
+			
 			
 		</style>
 	</head>
 	<body>
 		<header>
-			<div class="imgswap">
-				<a class="headera" href="http://google.com">
+			<div id="imgswap">
+				<a href="http://google.com">
 					<img src="../../images/title.jpg">
 					<img src="../../images/title1.jpg">
 				</a>
 			</div>	
 		</header>
 		<nav>
-			<ul class="navlist">
+			<ul id="navlist">
 				<li><a href="#">HOME</a></li>
 				<li><a href="#">ABOUT US</a></li>
 				<li><a href="#">NEWS</a></li>
@@ -100,13 +133,13 @@
 				<li><a href="#">CONTACTS</a></li>
 			</ul>
 		</nav>
-		<aside class="left">
-			<h2>카테고리</h2>
-			<ul>
-				<li><a>리스트1</a></li>
-				<li><a>리스트2</a></li>
-				<li><a>리스트3</a></li>
-				<li><a>리스트4</a></li>
+		<aside id="left">
+			<p>카테고리</p>
+			<ul id="leftul">
+				<li><a>Computer</a></li>
+				<li><a>Clothing</a></li>
+				<li><a>Musics</a></li>
+				<li><a>Movies</a></li>
 			</ul>
 		</aside>
 		<section>
@@ -118,7 +151,7 @@
 				<iframe></iframe>
 			</article>
 		</section>
-		<aside class="right">
+		<aside id="right">
 			<div>
 			 안녕하세요
 			</div>
